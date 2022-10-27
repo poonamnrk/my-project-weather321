@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>WEATHER API</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <script
+      src="https://kit.fontawesome.com/6c23b1fdda.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheets" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <form class="research">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >WEATHER FORECAST:</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  placeholder="Enter city"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">Change</button>
+              <button type="button" class="btn btn-success current">
+                Current
+              </button>
+            </form>
+            <form class="city_day">
+              <div class="row">
+                <div class="col-sm-6">
+                  <h2>City</h2>
+                  <p>
+                    <span class="city_temp">25</span>
+                    <span class="units"
+                      ><a class="celsius" href="#">°C</a> |
+                      <a class="fahrenheit" href="#">°F</a></span
+                    >
+                  </p>
+                </div>
+                <div class="col-sm-6 visible_day">
+                  <h4>Tues, 07:30</h4>
+                  <p class="data-today">16 September</p>
+                </div>
+              </div>
+            </form>
+            <i class="fa-solid fa-cloud cloud"></i>
+
+            <br />
+            <br />
+            <br />
+
+            <div class="container_sint">
+              <div class="weather_description">Cloudy</div>
+              <div>humidity today <span class="humidity">53</span>%</div>
+              <div>
+                <span class="min_temperature"> 12&deg;</span>/
+                <span class="max_temperature"> 28&deg;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <div class="card mb-3" style="max-width: 18rem">
+              <div class="card-header">
+                Wednesday, <br />
+                17 September
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  12&deg/25&deg
+                  <span class="emoji">
+                    <i class="fa-solid fa-cloud-sun"></i
+                  ></span>
+                </h5>
+              </div>
+            </div>
+            <div class="card mb-3" style="max-width: 18rem">
+              <div class="card-header">
+                Thursday, <br />
+                18 September
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  10&deg/22&deg
+                  <span class="emoji"><i class="fa-solid fa-cloud"></i></span>
+                </h5>
+              </div>
+            </div>
+            <div class="card mb-3" style="max-width: 18rem">
+              <div class="card-header">
+                Friday, <br />
+                19 September
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  13&deg/23&deg
+                  <span class="emoji"
+                    ><i class="fa-solid fa-cloud-sun"></i
+                  ></span>
+                </h5>
+              </div>
+            </div>
+
+            <div class="card mb-3" style="max-width: 18rem">
+              <div class="card-header">
+                Saturday, <br />
+                20 September
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  12&deg/26&deg
+                  <span class="emoji"><i class="fa-solid fa-sun"></i></span>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
